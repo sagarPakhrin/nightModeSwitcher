@@ -17,8 +17,8 @@ input[type="checkbox"]
 .check{
     position: absolute;
     display: block;
-    width: 40px;
-    height: 20px;
+    width: 80px;
+    height: 40px;
     background: #092c3e;
     cursor:pointer;
     border-radius: 20px;
@@ -29,17 +29,17 @@ input[type="checkbox"]
 
 input[type="checkbox"]:checked ~ .check{
     background:#fff;
-    box-shadow: 0 0 0 1200px #092c3e;
+    box-shadow: 0 0 0 1600px #092c3e;
 }
 
 .check::before{
     content: '';
     position: absolute;
-    top:2px;
-    left:2px;
+    top:4px;
+    left:4px;
     background: #fff;
-    width: 16px;
-    height: 16px;
+    width: 32px;
+    height: 32px;
     border-radius: 50%;
     transition: 0.5s;
 }
@@ -48,11 +48,11 @@ input[type="checkbox"]:checked ~ .check{
 .check:after{
     content: '';
     position: absolute;
-    top:2px;
-    right:2px;
+    top:4px;
+    right:4px;
     background: #092c3e;
-    width: 16px;
-    height: 16px;
+    width: 32px;
+    height: 32px;
     border-radius: 50%;
     transition: 0.5s;
     transform: translate(50px);
